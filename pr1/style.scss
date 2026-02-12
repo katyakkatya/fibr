@@ -1,0 +1,35 @@
+$text-color: #171717;
+$bg-color: #ffe1e1;
+$width: 40vw;
+$height: 40vh;
+
+@mixin image($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-color;
+    color: $text-color;
+    &__title {
+        font-size: 26px;
+    }
+    &__description {
+        font-size: 18px;
+    }
+    &__img {
+        @include image($width, $height);
+        border-radius: 10px;
+    }
+}
