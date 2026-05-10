@@ -7,8 +7,8 @@ const userSchema = new mongoose.Schema({
   first_name: { type: String, required: true },
   last_name: { type: String, required: true },
   age: { type: Number, min: 18 },
-  created_at: { type: Number, required: true }, // Unix timestamp
-  updated_at: { type: Number, required: true }, // Unix timestamp
+  created_at: { type: Number, required: true },
+  updated_at: { type: Number, required: true },
 });
 
 const User = mongoose.model("User", userSchema);
