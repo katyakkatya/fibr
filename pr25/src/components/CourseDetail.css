@@ -1,0 +1,157 @@
+.course-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #1b8f1f;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.course-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.course-header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.course-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.meta-item {
+    background: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.course-description,
+.course-program,
+.course-requirements {
+    margin-bottom: 30px;
+}
+
+.course-description h2,
+.course-program h2,
+.course-requirements h2 {
+    color: #1b8f1f;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.course-description p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.course-program ul,
+.course-requirements ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course-program li,
+.course-requirements li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+}
+
+.course-program li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1b8f1f;
+    font-weight: bold;
+}
+
+.course-requirements li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #1b8f1f;
+    font-size: 12px;
+}
+
+.course-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #1b8f1f;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0f6311;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #1b8f1f;
+    padding: 12px 30px;
+    border: 2px solid #1b8f1f;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #1b8f1f;
+    color: white;
+}
+
+.not-found {
+    text-align: center;
+    padding: 50px;
+}
+
+.not-found h2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .course-header h1 {
+        font-size: 28px;
+    }
+
+    .course-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 250px;
+    }
+}
